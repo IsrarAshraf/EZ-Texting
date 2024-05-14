@@ -7,6 +7,7 @@
         <title>Text Marketing | SMS Marketing | EZ Texting</title>
         <link href="../output.css" rel="stylesheet">
         <link href="../css/input.css" rel="stylesheet">
+        <script src="../js/script.js"></script>
 
         <!--=fonts=-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,13 +24,25 @@
         <!--=flowbite_link=-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
         <!--=end=-->
+
+        <!--=flowbite_script=-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+        <!--=end=-->
+
+        <!--=tailwind_elements=-->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+        <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+        <!--=end=-->
     </head>
 
     <body>
         <div class="main">
 
             <!--==Header==-->
-            <header class="fixed w-full top-0 z-50">
+            <header id="fixed-header" class="fixed w-full top-0 z-50">
                 <!--=desktop=-->
                 <nav class="hidden lg:block mx mx-6 px-1 py-4">
                     <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
@@ -197,14 +210,14 @@
                                 <img class="w-5 lg:w-full pl-2" src="../img/hero/quotes.png" alt="icon">
                             </h1>
                             <span class="md:text-xl xl:text-2xl font-bold text-white">Empower Your Business with Seamless Communication</span>                            
-                            <p class="text-white">Redefine your marketing, sales, customer service, and HR communications with the one tool that truly delivers — SMS marketing.</p>
+                            <p class="text-sm sm:text-base mb-7 text-white">Redefine your marketing, sales, customer service, and HR communications with the one tool that truly delivers — SMS marketing.</p>
                             <a href="#" class="btn">START FOR FREE</a>
                             <h6 class="text-xs text-white">No Credit card Required</h6>
                         </div>
             
                         <div class="m-auto py-10 xl:py-0">
                             <!-- Video element -->
-                            <video src="../img/videos/Text Marketing - SMS Marketing - EZ Texting.webm" autoplay loop></video>
+                            <video src="../videos/hero-sec/Text Marketing - SMS Marketing - EZ Texting.webm" autoplay loop></video>
                         </div>
                     </div>
                 </div>
@@ -242,24 +255,71 @@
                     </div>
 
                     <a href="#" class="borderbtn flex justify-center items-center pt-8 md:pt-12">CHOOSE A PLAN FOR YOUR BUSINESS</a>
-
                 </div>
             </section>
             <!--==section2_end==-->
+
+            <!--==section3==-->
+            <section>
+                <div class="pt-3 mx-6 px relative">
+                    <div class="md:flex justify-between items-center mx-auto max-w-screen-xl">
+                        <div class="md:w-[45%] lg:mr-4">
+                            <img class="w-full object-cover border-solid border-[1px] border-[#D9D9D9] rounded-[20px] " src="../img/sec3/pie.svg" alt="pie">
+                        </div>
+                        <div class="md:w-[45%] lg:ml-4 pt-7 md:pt-0">
+                            <h3>Measure Your Success</h3>
+                            <h2>With Analytics & Reporting</h2>
+                            <p>EZ Texting’s built-in reporting dashboard provides invaluable insight into your text marketing strategy and messaging trends. Watch your contacts and messaging data closely to optimize your campaigns.</p>
+                            <a href="#" class="btn">LEARN MORE</a>
+                            <img class="md:w-[80%] object-cover mt-8 border-solid border-[1px] border-[#D9D9D9] rounded-lg" src="../img/sec3/chart.svg" alt="chart">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--==section3_end==-->
+
+            <!--==section4==-->
+            <section>
+                <div class="pt-16 mx-6 px relative">
+                    <div class="mx-auto max-w-screen-xl">
+
+                        <h3>Small Businesses</h3>
+                        <h2>See Big Wins with Text Marketing</h2>
+
+                        <div class="flex flex-col-reverse xl:flex-row justify-center xl:justify-between items-center mt-7">
+
+                            <div class="video-container w-full xl:w-[62%]">
+                                <video class="w-full m-1 rounded sm:rounded-2xl" autoplay src="../videos/sec4/Text Marketing - SMS Marketing - EZ Texting.mp4"></video>
+                                <a href="https://www.youtube.com/embed/UbuokDERRKo?autoplay=1&controls=0&disablekb=1&playsinline=1&cc_load_policy=0&cc_lang_pref=auto&widget_referrer=https%3A%2F%2Fwww.eztexting.com%2F&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1&customControls=true&noCookie=false&enablejsapi=1&origin=https%3A%2F%2Fwww.eztexting.com&widgetid=5" class="play-icon"> 
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+
+                            <div class="grid sm:flex w-full  xl:w-[30%] xl:grid items-center">
+                                <div class="ratebox">
+                                    <span class="text-3xl font-bold text-[#FF6C00]">98%</span>
+                                    <h5 class="text-sm md:text-lg tracking-[4px] family font-bold text-[#34222E] pt-2">Open Rate</h5>
+                                </div>
+                                <div class="ratebox xl:my-4">
+                                    <span class="text-3xl font-bold">90%</span>
+                                    <h5 class="text-sm md:text-lg tracking-[4px] family font-bold text-[#34222E] pt-2">Reduction in No Shows</h5>
+                                </div>
+                                <div class="ratebox">
+                                    <span class="text-3xl font-bold text-[#0195DA]">100%</span>
+                                    <h5 class="text-sm md:text-lg tracking-[4px] family font-bold text-[#34222E] pt-2">Increase in Revenue</h5>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--==section4_end==-->
         </div>
 
 
-    <!--=flowbite_script=-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-    <!--=end=-->
-
-    <!--=tailwind_elements=-->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
-    <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
-    <!--=end=-->
-
+        <!--==scroll_header==-->
+        <script src="script.js"></script>
+        <!--==scroll_header_end==-->
     </body>
 </html>
