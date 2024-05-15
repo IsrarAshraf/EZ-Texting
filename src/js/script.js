@@ -1,5 +1,5 @@
 // scroll header
-window.addEventListener('scroll', () => {
+  window.addEventListener('scroll', () => {
     const header = document.getElementById('fixed-header');
     const scrollPosition = window.scrollY;
   
@@ -11,4 +11,29 @@ window.addEventListener('scroll', () => {
   });
 // end
   
+// video popup
+  const videoContainer = document.querySelector('.video-container');
+  const modal = document.getElementById("videoModal");
+  const modalVideo = document.getElementById("modalVideo");
+  const closeBtn = document.querySelector(".close");
+  const videoUrl = document.querySelector('.play-icon').href;
+
+  videoContainer.addEventListener('click', function(event) {
+      event.preventDefault();
+      modal.style.display = "block";
+      modalVideo.src = videoUrl;
+  });
+
+  closeBtn.addEventListener('click', function() {
+      modal.style.display = "none";
+      modalVideo.src = "";
+  });
+
+  window.addEventListener('click', function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+          modalVideo.src = "";
+      }
+  });
+// end
   
