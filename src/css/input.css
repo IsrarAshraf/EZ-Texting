@@ -78,6 +78,7 @@ h3 {
     padding: 6px;
     padding-left: 15px;
     padding-right: 15px;
+    transition: 0.3s ease-in-out;
 }
 
 .btn:hover {

@@ -36,6 +36,12 @@
         <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
         <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
         <!--=end=-->
+
+        <!--=faq=-->
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+        <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+        <script src="//unpkg.com/alpinejs" defer></script>
+        <!--=end=-->
     </head>
 
     <body>
@@ -382,24 +388,26 @@
 
             <!--==section6==-->
             <section>
-                <div class="py-16 mx-6 px relative">
+                <div class="pt-16 mx-6 px relative">
                     <div class="mx-auto max-w-screen-xl">
-
-                        <div class="flex justify-between items-center">
-
-                            <div class="w-[60%]">
-                                <h3>Trusted</h3>
-                                <h2>By All Types of Organizations</h2>
-                                <p>Our reviews showcase a track record of unwavering trust from a spectrum of businesses, institutions, and agencies, affirming our commitment to quality and dependability across industries.</p>
-                                <a href="#" class="btn">START FREE</a>
+                        <div class="lg:flex justify-between items-center">
+                            <div class="relative flex justify-center items-end lg:w-[50%]">
+                                <div class="relative bg-[#E2434B] h-[400px] sm:h-[350px] md:h-[370px] lg:h-[445px] xl:h-[440px] w-[250px]"></div>
+                                <div class="absolute">
+                                    <h3 class="text-[#000] sm:text-[#E2434B]">Trusted</h3>
+                                    <h2>By All Types of Organizations</h2>
+                                    <p class="lg:w-[80%]">Our reviews showcase a track record of unwavering trust from a spectrum of businesses, institutions, and agencies, affirming our commitment to quality and dependability across industries.</p>
+                                    <a href="#" class="btn shadow-[0px_0px_6px__0px_#000] sm:shadow-none">START FREE</a>
+                                    <img src="../img/testimoials/“.png" class="ml-auto" alt="icon">
+                                </div>
                             </div>
 
-                            <div class="w-[40%]">
+                            <div class="lg:w-[40%] mt-6 lg:mt-0">
                                 <div class="border-solid border-[1px] border-[#34222E] rounded-xl p-8">
                                     <div class="testimonial-container">
                                         <div class="testimonial active">
                                             <div class="flex">
-                                                <img src="../img/testimoials/erin-dearing.avif" alt="img">
+                                                <img src="../img/testimoials/erin-dearing.avif" class="w-20 h-20 object-cover" alt="img">
                                                 <div class="grid mx-6">
                                                     <font class="text-xl font-bold family">Erin Dearing</font>
                                                     <span class="text-lg family">Photographer</span>
@@ -413,19 +421,19 @@
                                                 <i class="text-yellow-400 fa-solid fa-star"></i>
                                                 <i class="text-yellow-400 fa-solid fa-star"></i>
                                             </div>
-                                            <font class="text-base">“EZ Texting helps me to stay in contact with my busy customers. It's great for promoting events or specials.”</font>
-                                            <div class="my-7 text-base text-[#8E8E8E] underline">
-                                                <a href="">Reporting Tools </a>
-                                                &nbsp;|&nbsp;
-                                                <a href="">Integrations </a>
-                                                &nbsp;|&nbsp;
-                                                <a href="">Short Codes </a>
+                                            <font class="text-base xl:w-[90%] block">“EZ Texting helps me to stay in contact with my busy customers. It's great for promoting events or specials.”</font>
+                                            <div class="lg:w-[80%] flex flex-wrap my-7 text-base text-[#8E8E8E] leading-8">
+                                                <a class="flex w-fit underline whitespace-nowrap" href="">Reporting Tools </a>
+                                                &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                                <a class="flex w-fit underline whitespace-nowrap" href="">Integrations</a>
+                                                 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                                <a class="flex w-fit underline whitespace-nowrap" href="">Short Codes </a>
                                             </div>
                                         </div>
                                 
                                         <div class="testimonial">
                                             <div class="flex">
-                                                <img src="../img/testimoials/tolk-preston.avif" alt="img">
+                                                <img src="../img/testimoials/tolk-preston.avif" class="w-20 h-20 object-cover" alt="img">
                                                 <div class="grid mx-6">
                                                     <font class="text-xl font-bold family">Tolk P.</font>
                                                     <span class="text-lg family">Director Of Analytics</span>
@@ -439,13 +447,39 @@
                                                 <i class="text-yellow-400 fa-solid fa-star"></i>
                                                 <i class="text-yellow-400 fa-solid fa-star"></i>
                                             </div>
-                                            <font class="text-base">“EZ Texting has made it possible to communicate with our client's customers in the way they prefer - through text.”</font>
-                                            <div class="my-7 text-base text-[#8E8E8E] underline">
-                                                <a href="">Two-Way Texting</a>
-                                                &nbsp;|&nbsp;
-                                                <a href="">SMS Keywords</a>
-                                                &nbsp;|&nbsp;
-                                                <a href="">QR Codes</a>
+                                            <font class="text-base xl:w-[90%]">“EZ Texting has made it possible to communicate with our client's customers in the way they prefer - through text.”</font>
+                                            <div class="lg:w-[80%] flex flex-wrap my-7 text-base text-[#8E8E8E] leading-8">
+                                                <a class="flex w-fit underline whitespace-nowrap" href="">Two-Way Texting</a>
+                                                &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                                <a class="flex w-fit underline whitespace-nowrap" href="">SMS Keywords</a>
+                                                 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                                <a class="flex w-fit underline whitespace-nowrap" href="">QR Codes</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="testimonial">
+                                            <div class="flex">
+                                                <img src="../img/testimoials/christopher-payne.avif" class="w-20 h-20 object-cover" alt="img">
+                                                <div class="grid mx-6">
+                                                    <font class="text-xl font-bold family">Christopher Payne</font>
+                                                    <span class="text-lg family">Digital Sales Manager</span>
+                                                    <span class="text-xs font-medium family tracking-widest text-[#767676]">APPAREL & FASHION</span>
+                                                </div>
+                                            </div>
+                                            <div class="my-7">
+                                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                                <i class="text-yellow-400 fa-solid fa-star"></i>
+                                            </div>
+                                            <font class="text-base xl:w-[90%]">“EZ Texting is great for starting your journey into using SMS and MMS for both campaigns and event activations.”</font>
+                                            <div class="lg:w-[80%] flex flex-wrap my-7 text-base text-[#8E8E8E] leading-8">
+                                                <a class="flex w-fit underline whitespace-nowrap" href="">Contact Management</a>
+                                                &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                                <a class="flex w-fit underline whitespace-nowrap" href="">Text Automation</a>
+                                                 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                                <a class="flex w-fit underline whitespace-nowrap" href="">MMS Messaging</a>
                                             </div>
                                         </div>
                                     </div>
@@ -455,14 +489,74 @@
                                         <a href="#" class="btn next"><i class="fa-solid fa-angle-right"></i></a>
                                     </div>
                                 </div>
-                                
                             </div>
-
                         </div>
                     </div>
                 </div>
             </section>
             <!--==section6_end==-->
+
+             <!--==section7==-->
+             <section>
+                <div class="py-16 mx-6 px relative">
+                    <div class="mx-auto max-w-screen-xl">
+
+                        <h3>COMMONLY ASKED QUESTIONS</h3>
+                        <h2>What the FAQ?</h2>
+
+                        <div class="lg:flex justify-between py-6 lg:py-8 bg-[url('/src/img/testimoials/shape-2.svg')] bg-no-repeat bg-center">
+                            <div class="lg:w-1/2">
+                                <div x-data="{ openItem: 1 }" class="flex flex-col">
+                                    <ul>
+                                        <li class="bg-[#34222E] my-2 shadow-lg rounded-lg p-8" :class="{ 'max-h-screen': openItem === 1 }" x-data="{ id: 1 }">
+                                            <div @click="openItem = openItem === id ? null : id" class="flex flex-row justify-between items-center font-semibold cursor-pointer">
+                                                <span class="text-2xl sm:text-3xl family font-bold text-white">What is Text Marketing?</span>
+                                                <img :class="{ 'rotate-180': openItem === id }" class="transform transition-transform duration-500" src="../img/icons/angles/triangle.png" alt="icon">
+                                            </div>
+                                            <div x-ref="tab" x-show="openItem === id" class="overflow-hidden duration-500 transition-all"
+                                                :style="openItem === id ? 'max-height: 1000px;' : 'max-height: 0;'">
+                                                <div class="text-sm sm:text-base text-white pl-4 mt-10 border-l-2 border-[#E2434B]">
+                                                    Text marketing stands for short message service marketing and operates via texting apps such as Google Messages and iMessages.
+                                                    You may know text marketing as SMS marketing, or possibly mass texting or bulk texting, but they all refer to the same thing — a 
+                                                    modern, mobile channel that allows businesses and marketers to reach their customers and clients faster and more effectively than 
+                                                    ever. Its most basic usage is to send notifications, alerts (inclement weather or itinerary changes), appointment and delivery 
+                                                    reminders, and to send mass text messages that include promotions and exclusive offers, but that’s just the tip of the iceberg.
+                                                </div>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="bg-[#34222E] my-2 shadow-lg rounded-lg p-8" :class="{ 'max-h-screen': openItem === 2 }" x-data="{ id: 2 }">
+                                            <div @click="openItem = openItem === id ? null : id" class="flex flex-row justify-between items-center font-semibold cursor-pointer">
+                                                <span class="text-2xl sm:text-3xl family font-bold text-white">Does Text Marketing Really Work?</span>
+                                                <img :class="{ 'rotate-180': openItem === id }" class="transform transition-transform duration-500" src="../img/icons/angles/triangle.png" alt="icon">
+                                            </div>
+                                            <div x-ref="tab" x-show="openItem === id" class="overflow-hidden duration-500 transition-all"
+                                                :style="openItem === id ? 'max-height: 1000px;' : 'max-height: 0;'">
+                                                <div class="text-sm sm:text-base text-white pl-4 mt-10 border-l-2 border-[#E2434B]">
+                                                    Absolutely. <br>
+                                                    What other channel offers a 98% engagement rate with most messages being read within minutes (or seconds) of receipt? People love to text and we've seen truly 
+                                                    impactful numbers for our customers, including CTRs at 40% and four-figure ROI for some customers. But not all mass texting services are created equal, 
+                                                    so be sure to look for the SMS features you'll need, like automations or list growth tools to best reach your target audience. EZ Texting is mass 
+                                                    texting service that offers both, along with dozens of other vital SMS features designed to help you win.<br>
+                                                    When you want your message seen - send a text.
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="lg:w-[40%]">
+                                <h2>We’re passionate about helping local businesses to grow online.</h2>
+                                <p class="xl:w-[90%]">our passion is fuelled by the success stories of local businesses we've empowered to thrive in the digital realm.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <script src="//unpkg.com/alpinejs" defer></script>
+            </section>
+            <!--==section7_end==-->
         </div>
 
         <!--==scroll_header==-->
@@ -496,6 +590,34 @@
             });
         </script>
         
+        <!-- video popup -->
+        <script>
+            const videoContainer = document.querySelector('.video-container');
+            const modal = document.getElementById("videoModal");
+            const modalVideo = document.getElementById("modalVideo");
+            const closeBtn = document.querySelector(".close");
+            const videoUrl = document.querySelector('.play-icon').href;
+
+            videoContainer.addEventListener('click', function(event) {
+                event.preventDefault();
+                modal.style.display = "block";
+                modalVideo.src = videoUrl;
+            });
+
+            closeBtn.addEventListener('click', function() {
+                modal.style.display = "none";
+                modalVideo.src = "";
+            });
+
+            window.addEventListener('click', function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                    modalVideo.src = "";
+                }
+            });
+            
+        </script>
+        <!-- end -->
 
     </body>
 </html>
