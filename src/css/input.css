@@ -100,7 +100,6 @@ h3 {
     background-color: rgba(52, 34, 46, 0.8);
 }
 
-
 header#fixed-header {
     position: fixed;
     top: 0;
@@ -192,40 +191,47 @@ header#fixed-header {
     color: black;
 }
 
-    /* Modal styles */
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1000;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        justify-content: center;
-        align-items: center;
-    }
-    .modal-content {
-        position: relative;
-        width: 90%;
-        height: 100%;
-        max-width: none;
-        max-height: none;
-        margin: auto;
-    }
-    .close {
-        position: absolute;
-        top: 10px;
-        right: 25px;
-        color: white;
-        font-size: 35px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-    .modal iframe {
-        width: 100%;
-        height: 100%;
-    }
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    margin: auto;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal iframe {
+    width: 100%;
+    height: 100%;
+}
+/* end */
+.ratebox {
+    border: 1px solid #34222E;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 /* section4_end */
 
 /* section5 */
@@ -272,6 +278,40 @@ header#fixed-header {
 }
 
 /* section6_end */
+
+/* section8 */
+.solution {
+    display: inline-grid;
+    width: 180px;
+    height: 180px;
+    border: 1px solid #34222E;
+    color: #34222E !important;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Exo 2", sans-serif;
+}
+.swiper-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+  }
+  .swiper-slide {
+    width: fit-content !important;
+  }
+  .solution {
+    text-align: center;
+  }
+/* section8_end */
+
+/* section9 */
+.sec9 {
+    display: flex;
+}
+/* end */
+
 
 /* mobile */
 @media (max-width: 1279px) {

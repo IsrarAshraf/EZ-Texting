@@ -5,9 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Text Marketing | SMS Marketing | EZ Texting</title>
-        <link href="../output.css" rel="stylesheet">
-        <link href="../css/input.css" rel="stylesheet">
-        <script src="../js/script.js"></script>
+        <link href="/src/output.css" rel="stylesheet">
+        <link href="/src/css/input.css" rel="stylesheet">
 
         <!--=fonts=-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +33,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
         <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
-        <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
         <!--=end=-->
 
         <!--=faq=-->
@@ -42,6 +40,9 @@
         <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
         <script src="//unpkg.com/alpinejs" defer></script>
         <!--=end=-->
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     </head>
 
     <body>
@@ -498,7 +499,7 @@
 
              <!--==section7==-->
              <section>
-                <div class="py-16 mx-6 px relative">
+                <div class="pt-16 mx-6 px relative">
                     <div class="mx-auto max-w-screen-xl">
 
                         <h3>COMMONLY ASKED QUESTIONS</h3>
@@ -525,14 +526,14 @@
                                             </div>
                                         </li>
                                         
-                                        <li class="bg-[#34222E] my-2 shadow-lg rounded-lg p-8" :class="{ 'max-h-screen': openItem === 2 }" x-data="{ id: 2 }">
+                                        <li class="bg-white text-[#34222E] my-2 shadow-lg rounded-lg p-8" :class="{ 'max-h-screen': openItem === 2 }" x-data="{ id: 2 }">
                                             <div @click="openItem = openItem === id ? null : id" class="flex flex-row justify-between items-center font-semibold cursor-pointer">
-                                                <span class="text-2xl sm:text-3xl family font-bold text-white">Does Text Marketing Really Work?</span>
+                                                <span class="text-2xl sm:text-3xl family font-bold">Does Text Marketing Really Work?</span>
                                                 <img :class="{ 'rotate-180': openItem === id }" class="transform transition-transform duration-500" src="../img/icons/angles/triangle.png" alt="icon">
                                             </div>
                                             <div x-ref="tab" x-show="openItem === id" class="overflow-hidden duration-500 transition-all"
                                                 :style="openItem === id ? 'max-height: 1000px;' : 'max-height: 0;'">
-                                                <div class="text-sm sm:text-base text-white pl-4 mt-10 border-l-2 border-[#E2434B]">
+                                                <div class="text-sm sm:text-base pl-4 mt-10 border-l-2 border-[#E2434B]">
                                                     Absolutely. <br>
                                                     What other channel offers a 98% engagement rate with most messages being read within minutes (or seconds) of receipt? People love to text and we've seen truly 
                                                     impactful numbers for our customers, including CTRs at 40% and four-figure ROI for some customers. But not all mass texting services are created equal, 
@@ -546,7 +547,7 @@
                                 </div>
                             </div>
 
-                            <div class="lg:w-[40%]">
+                            <div class="pt-8 lg:pt-0 lg:w-[40%]">
                                 <h2>We’re passionate about helping local businesses to grow online.</h2>
                                 <p class="xl:w-[90%]">our passion is fuelled by the success stories of local businesses we've empowered to thrive in the digital realm.</p>
                             </div>
@@ -557,67 +558,207 @@
                 <script src="//unpkg.com/alpinejs" defer></script>
             </section>
             <!--==section7_end==-->
+
+            <!--==section8==-->
+            <section class="bg-[#FEE9D7] mt-16">
+                <div class="bg-[url('/src/img/bg/dots.png')]">
+                    <div class="py-10  mx-6 px relative">
+                        <div class="mx-auto max-w-screen-xl text-center">
+                            <h2>Solutions for Every Industry</h2>
+                            <div class="swiper-container py-10">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="solution">
+                                            <img class="m-auto pb-1" src="../img/icons/slider/1.png" alt="icon">
+                                            Restaurants
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="solution">
+                                            <img class="m-auto pb-1" src="../img/icons/slider/2.png" alt="icon">
+                                            Retail and Ecommerce
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="solution">
+                                            <img class="m-auto pb-1" src="../img/icons/slider/3.png" alt="icon">
+                                            Salons and Spas
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="solution">
+                                            <img class="m-auto pb-1" src="../img/icons/slider/4.png" alt="icon">
+                                            Transportation
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="solution">
+                                            <img class="m-auto pb-1" src="../img/icons/slider/5.png" alt="icon">
+                                            Wedding Services
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="solution">
+                                            <img class="m-auto pb-1" src="../img/icons/slider/6.png" alt="icon">
+                                            Bars and Nightclubs
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="solution">
+                                            <img class="m-auto pb-1" src="../img/icons/slider/7.png" alt="icon">
+                                            Construction and Home Services
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="solution">
+                                            <img class="m-auto pb-1" src="../img/icons/slider/8.png" alt="icon">
+                                            Dealerships
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="solution">
+                                            <img class="m-auto pb-1" src="../img/icons/slider/9.png" alt="icon">
+                                            Education
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="solution">
+                                            <img class="m-auto pb-1" src="../img/icons/slider/10.png" alt="icon">
+                                            Fitness and Gyms
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="solution">
+                                            <img class="m-auto pb-1" src="../img/icons/slider/11.png" alt="icon">
+                                            Government
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="solution">
+                                            <img class="m-auto pb-1" src="../img/icons/slider/12.png" alt="icon">
+                                            Health Care
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="solution">
+                                            <img class="m-auto pb-1" src="../img/icons/slider/13.png" alt="icon">
+                                            Higher Education
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="solution">
+                                            <img class="m-auto pb-1" src="../img/icons/slider/14.png" alt="icon">
+                                            Hospitality
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="solution">
+                                            <img class="m-auto pb-1" src="../img/icons/slider/15.png" alt="icon">
+                                            Marketing Agencies
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="solution">
+                                            <img class="m-auto pb-1" src="../img/icons/slider/16.png" alt="icon">
+                                            Nonprofits
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="solution">
+                                            <img class="m-auto pb-1" src="../img/icons/slider/17.png" alt="icon">
+                                            Pet Care
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="solution">
+                                            <img class="m-auto pb-1" src="../img/icons/slider/18.png" alt="icon">
+                                            Professional Services
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="solution">
+                                            <img class="m-auto pb-1" src="../img/icons/slider/19.png" alt="icon">
+                                            Property Management
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="solution">
+                                            <img class="m-auto pb-1" src="../img/icons/slider/20.png" alt="icon">
+                                            Real Estate
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="solution">
+                                            <img class="m-auto pb-1" src="../img/icons/slider/21.png" alt="icon">
+                                            Religious Organizations
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="solution">
+                                            <img class="m-auto pb-1" src="../img/icons/slider/22.png" alt="icon">
+                                            Rental Services
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn">SEE ALL INDUSTRIES</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--==section8_end==-->
+
+            <!--==section9==-->
+            <section>
+                <div class="py-16 mx-6 px relative">
+                    <div class="mx-auto max-w-screen-xl">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <h3>New Releases:</h3>
+                                <h2>AI Texting & Customer Support!</h2>
+                                <p>Join customers experiencing a 30% increase in text message responses!</p>
+                            </div>
+                            <div>
+                                <a href="#" class="btn">LEARN MORE</a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+                                <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+                                    <li class="me-2" role="presentation">
+                                        <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Team Inbox</button>
+                                    </li>
+                                    <li class="me-2" role="presentation">
+                                        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">AI REPLY</button>
+                                    </li>
+                                    <li class="me-2" role="presentation">
+                                        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">AI COMPOSE</button>
+                                    </li>
+            
+                                </ul>
+                            </div>
+                            <div id="default-tab-content">
+                                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                                </div>
+                                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                                </div>
+                                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                                </div>
+                                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--==section9_end==-->
         </div>
 
-        <!--==scroll_header==-->
-        <script src="script.js"></script>
-        <!--==scroll_header_end==-->
-        
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const testimonials = document.querySelectorAll('.testimonial');
-                let currentIndex = 0;
-        
-                function showTestimonial(index) {
-                    testimonials.forEach((testimonial, idx) => {
-                        testimonial.classList.toggle('active', idx === index);
-                    });
-                }
-        
-                document.querySelector('.btn.next').addEventListener('click', function(event) {
-                    event.preventDefault();
-                    currentIndex = (currentIndex + 1) % testimonials.length;
-                    showTestimonial(currentIndex);
-                });
-        
-                document.querySelector('.btn.prev').addEventListener('click', function(event) {
-                    event.preventDefault();
-                    currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
-                    showTestimonial(currentIndex);
-                });
-        
-                showTestimonial(currentIndex);
-            });
-        </script>
-        
-        <!-- video popup -->
-        <script>
-            const videoContainer = document.querySelector('.video-container');
-            const modal = document.getElementById("videoModal");
-            const modalVideo = document.getElementById("modalVideo");
-            const closeBtn = document.querySelector(".close");
-            const videoUrl = document.querySelector('.play-icon').href;
-
-            videoContainer.addEventListener('click', function(event) {
-                event.preventDefault();
-                modal.style.display = "block";
-                modalVideo.src = videoUrl;
-            });
-
-            closeBtn.addEventListener('click', function() {
-                modal.style.display = "none";
-                modalVideo.src = "";
-            });
-
-            window.addEventListener('click', function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                    modalVideo.src = "";
-                }
-            });
-            
-        </script>
-        <!-- end -->
-
+        <script src="/src/pages/script.js"></script>
     </body>
 </html>
