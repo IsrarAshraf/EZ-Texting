@@ -724,32 +724,100 @@
                         </div>
                         
                         <div>
-                            <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-                                <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+                            <div class="mb-4 border-b-2 border-[#E5E5E5]">
+                                <ul class="flex -mb-px text-xl font-bold text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
                                     <li class="me-2" role="presentation">
-                                        <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Team Inbox</button>
+                                        <button class="w-full inline-block p-4 border-b-2 rounded-t-lg uppercase custom-active-tab" id="Inbox-tab" data-tabs-target="#Inbox" type="button" role="tab" aria-controls="Inbox" aria-selected="false">Team Inbox</button>
                                     </li>
                                     <li class="me-2" role="presentation">
-                                        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">AI REPLY</button>
+                                        <button class="w-full inline-block p-4 border-b-2 rounded-t-lg custom-hover-tab" id="Reply-tab" data-tabs-target="#Reply" type="button" role="tab" aria-controls="Reply" aria-selected="false">AI REPLY</button>
                                     </li>
                                     <li class="me-2" role="presentation">
-                                        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">AI COMPOSE</button>
+                                        <button class="w-full inline-block p-4 border-b-2 rounded-t-lg custom-hover-tab" id="Compose-tab" data-tabs-target="#Compose" type="button" role="tab" aria-controls="Compose" aria-selected="false">AI COMPOSE</button>
                                     </li>
-            
                                 </ul>
                             </div>
+
                             <div id="default-tab-content">
-                                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                                <div class="hidden pt-12" id="Inbox" role="tabpanel" aria-labelledby="Inbox-tab">
+                                    <img class="m-auto object-fit max-w-60" src="/src/img/tabs/team-inbox_logo.avif" alt="Logo">
+                                    <p class="w-[90%] sm:w-[70%] tracking-normal text-center m-auto py-2 lg:py-4 text-[#34222E]">Assign messages and collaborate seamlessly with your team for lightning-fast responses that help usher customers through the purchasing funnel faster.</p>
+                                    <div class="flex flex-wrap justify-between">
+                                        <div class="tab-box">
+                                            <img src="/src/img/icons/TABS/tab1/1.png" alt="icon">
+                                            <h5>Elevate Satisfaction</h5>
+                                            <p>Let customers connect via mobile so your team can assist with multiple inquiries.</p>
+                                        </div>
+                                        <div class="tab-box">
+                                            <img src="/src/img/icons/TABS/tab1/2.png" alt="icon">
+                                            <h5>Drive Sales</h5>
+                                            <p>Use text marketing's 98% open rate for lead management, eliminating missed opportunities.</p>
+                                        </div>
+                                        <div class="tab-box">
+                                            <img src="/src/img/icons/TABS/tab1/3.png" alt="icon">
+                                            <h5>Enhance Support</h5>
+                                            <p>Efficiently handle higher conversation volumes as a team, maintaining high-quality service.</p>
+                                        </div>
+                                        <div class="tab-box">
+                                            <img src="/src/img/icons/TABS/tab1/4.png" alt="icon">
+                                            <h5>Streamline Communication</h5>
+                                            <p>Improve response times by sorting, filtering, and assigning conversations.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+
+                                <div class="hidden pt-12" id="Reply" role="tabpanel" aria-labelledby="Reply-tab">
+                                    <img class="m-auto object-fit max-w-36" src="/src/img/tabs/ai-reply_logo.avif" alt="Logo">
+                                    <p class="w-[90%] sm:w-[70%] tracking-normal text-center m-auto py-2 lg:py-4 text-[#34222E]">Included with Team Inbox, AI Reply allows you to engage in two-way conversations with increased speed, specificity, and personalization.</p>
+                                    <div class="flex flex-wrap justify-between">
+                                        <div class="tab-box">
+                                            <img src="/src/img/icons/TABS/tab2/1.png" alt="icon">
+                                            <h5>Strengthen Brand Identity</h5>
+                                            <p>Leverage AI-generated responses to align with your company’s distinct style.</p>
+                                        </div>
+                                        <div class="tab-box">
+                                            <img src="/src/img/icons/TABS/tab2/2.png" alt="icon">
+                                            <h5>Enhance Precision & Accuracy</h5>
+                                            <p>AI Reply learns from your website, delivering accurate info with intelligent suggestions.</p>
+                                        </div>
+                                        <div class="tab-box">
+                                            <img src="/src/img/icons/TABS/tab2/3.png" alt="icon">
+                                            <h5>Optimize Operational Productivity</h5>
+                                            <p>Scale efficiently with fewer staff, and grow customer satisfaction as business expands.</p>
+                                        </div>
+                                        <div class="tab-box">
+                                            <img src="/src/img/icons/TABS/tab2/4.png" alt="icon">
+                                            <h5>Boost Personalization</h5>
+                                            <p>Tailor messages to individual recipients or segments, increasing relevance and engagement.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
-                                </div>
-                                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+
+                                <div class="hidden pt-12" id="Compose" role="tabpanel" aria-labelledby="Compose-tab">
+                                    <img class="m-auto object-fit max-w-60" src="/src/img/tabs/AI-Compose_logo.avif" alt="Logo">
+                                    <p class="w-[90%] sm:w-[70%] tracking-normal text-center m-auto py-2 lg:py-4 text-[#34222E]">Leverage AI-generated content suggestions tailored to your business context and effortlessly make your text marketing more personalized, diverse, relevant, and engaging.</p>
+                                    <div class="flex flex-wrap justify-between">
+                                        <div class="tab-box">
+                                            <img src="/src/img/icons/TABS/tab3/1.png" alt="icon">
+                                            <h5>Drive Cost Savings</h5>
+                                            <p>Reduce the resources required for manual text marketing creation and optimization.</p>
+                                        </div>
+                                        <div class="tab-box">
+                                            <img src="/src/img/icons/TABS/tab3/2.png" alt="icon">
+                                            <h5>Improve ROI</h5>
+                                            <p>Leverage muscular text notifications to increase the likelihood of generating sales.</p>
+                                        </div>
+                                        <div class="tab-box">
+                                            <img src="/src/img/icons/TABS/tab3/3.png" alt="icon">
+                                            <h5>Quicker Responses</h5>
+                                            <p>Enables swift customer responses, seizing real-time opportunities for growth.</p>
+                                        </div>
+                                        <div class="tab-box">
+                                            <img src="/src/img/icons/TABS/tab3/4.png" alt="icon">
+                                            <h5>Content Diversity</h5>
+                                            <p>Fresh and creative ideas to help users experiment with new approaches.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
