@@ -66,6 +66,13 @@ h3 {
     color: #E2434B;
 }
 
+h6 {
+    font-size: 18px !important;
+    font-weight: bold !important;
+    font-family: "Exo 2", sans-serif;
+    color: #E2434B;
+}
+
 /* btn */
 .btn {
     font-size: 16px;
@@ -96,9 +103,6 @@ h3 {
     text-transform: uppercase;
     color: white;
 }
-.overlay-color {
-    background-color: rgba(52, 34, 46, 0.8);
-}
 
 header#fixed-header {
     position: fixed;
@@ -107,10 +111,6 @@ header#fixed-header {
     width: 100%;
     background-color: transparent;
     transition: background-color 0.3s ease;
-  }
-  
-  header#fixed-header.scrolled {
-    background-color: #262626;
   }
 
 /* header end */

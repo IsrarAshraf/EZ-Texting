@@ -1,4 +1,4 @@
-// scroll header
+// Scroll header
 window.addEventListener('scroll', () => {
     const header = document.getElementById('fixed-header');
     const scrollPosition = window.scrollY;
@@ -8,7 +8,12 @@ window.addEventListener('scroll', () => {
   
     // Set the background color with opacity
     header.style.backgroundColor = `rgba(52, 34, 46, ${opacity})`;
-  });
+  
+    // Set the box shadow
+    header.style.boxShadow = scrollPosition > 0 
+        ? '0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 2px rgba(0, 0, 0, 0.12)' 
+        : 'none';
+});
 // end
   
 
