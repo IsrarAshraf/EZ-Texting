@@ -437,6 +437,14 @@ button[aria-selected="true"] {
     border: 10px solid black;
     border-radius: 20px;
 }
+#Create video {
+    border: 10px solid black;
+    border-radius: 20px;
+}
+#See video {
+    border: 10px solid black;
+    border-radius: 20px;
+}
 .easybox {
     border: 1px solid #34222E;
     border-radius: 10px;
